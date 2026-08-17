@@ -1,0 +1,192 @@
+.press-start-2p-regular {
+  font-family: "Press Start 2P",sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    background-color: #7e70ff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#corpo{
+    min-height: 60%;
+    height: auto;
+    width: 80%;
+    max-width: 800px;
+    min-width: 330px;
+    background-color: #070426;
+    color: white;
+    border: 5px solid white;
+    border-radius: 25px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Press Start 2P";
+    gap: 30px;
+}
+h1, h2{
+    text-align: center;
+    margin-top: 30px;
+
+}
+h2{
+    font-size: 20px;
+}
+#dificuldade{
+    height: 200px;
+    width: 50%;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+
+}
+
+#algoritmos,#redes, #sistemas-operacionais{
+    min-width: 50px;
+}
+
+
+button{
+    color: #070426;
+    border: none;
+    margin: 1px 1px 1px 1px;
+    border-radius: 25px;
+    background-color: white;
+    height: 50%;
+    width: 50%;
+    text-align: center;
+    font-family: "Press Start 2P";
+    cursor: pointer;
+    transition: background .3s;
+}
+
+button:active{
+    background-color: #070426;
+    color: #ffffff;
+    
+}
+
+#caixa-de-texto{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    font-family: "Press Start 2P";
+}
+
+#jogar{
+    font-size: 25px;
+}
+
+.topo{
+    width: 100%;
+    height: 18%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#nome, #numero-questao, #pontuacao{
+    border: 5px solid #ffffff;
+    border-radius: 25px;
+    font-size: 10px;
+    width: auto;
+    padding: 10px;
+    height: 55%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.enunciado{
+    text-align: center;
+}
+#questao{
+    padding: 10px 10px 10px 10px;
+}
+
+.alternativas{
+    width: 90%;
+    min-height: 30%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn{
+    flex: 1 1 200px;
+    max-width: 400px;    
+    min-height: 50px;     
+    padding: 15px;
+}
+
+.correto {
+    background-color: #28a745;
+    color: white;
+}
+
+.errado {
+    background-color: #dc3545;
+    color: white;
+}
+
+.resultado-final{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+.botao-final{
+    width: 70%;
+    height: 100px;
+}
+
+.barra{
+    width: 60%;
+    height: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.barra div {
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #00ff6a, #00c853);
+    transition: width .1s linear, background .3s ease, opacity .2s ease;
+}
+
+@keyframes perigo {
+    0%   { transform: translateX(0); }
+    25%  { transform: translateX(-2px); }
+    50%  { transform: translateX(2px); }
+    75%  { transform: translateX(-2px); }
+    100% { transform: translateX(0); }
+}
+
+.perigo{
+    animation: perigo .12s infinite;
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+        <title>Quiz de Informática</title>
+    </head>
+    <body>
+        <div id="corpo">
+            <div id="titulos">
+                <h1 class="titulo1">QUIZ DE INFORMÁTICA</h1>
+                <h2 class="titulo2">Escolha a disciplina das perguntas</h2>
+            </div>
+            <div id="dificuldade" class="div-dos-botoes">
+                <button id="algoritmos" onclick=" var x = 'Algoritmos'; adicionarCaixaDeTexto('Algoritmos');">Algoritmos</button>
+                <button id="redes" onclick=" var x = 'Redes'; adicionarCaixaDeTexto('Redes');">Redes</button>
+                <button id="sistemas-operacionais" onclick="var x = 'SO'; adicionarCaixaDeTexto('SO');">Sistemas Operacionais</button>
+            </div>
+            <div id="creditos">
+                <p>Desenvolvido por: Diego Antony</p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
