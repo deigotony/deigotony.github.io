@@ -31,12 +31,48 @@ const questoesAlgoritmos = [
         ],
     },
     {
+        question: "Qual tipo de dado é mais adequado para armazenar o valor de um preço (ex: 49.90) em linguagens como Python?",
+        respostas: [
+            { opcao: "int (Inteiro)", correto: false },
+            { opcao: "float (Ponto Flutuante / Real)", correto: true },
+            { opcao: "bool (Booleano)", correto: false },
+            { opcao: "str (Texto / String)", correto: false },
+        ],
+    },
+    {
+        question: "Estruturas condicionais (como if / else) servem para:",
+        respostas: [
+            { opcao: "Repetir um bloco de código um número indeterminado de vezes", correto: false },
+            { opcao: "Tomar decisões no código com base no resultado de uma expressão lógica", correto: true },
+            { opcao: "Converter dados de texto em números inteiros automaticamente", correto: false },
+            { opcao: "Declarar funções e métodos na memória", correto: false },
+        ],
+    },
+    {
         question: "O que é um laço de repetição?",
         respostas: [
             { opcao: "Um acessório para cabelo, roupas e várias outras coisas", correto: false },
             { opcao: "Um trecho de código que se repete até que algo o interrompa", correto: true },
             { opcao: "Um trecho de código que sempre roda infinitamente", correto: false },
             { opcao: "Um trecho de código que só é executado se uma condição for verdadeira", correto: false },
+        ],
+    },
+    {
+        question: "O que acontece quando a condição de um laço 'while' se torna Falsa?",
+        respostas: [
+            { opcao: "O programa gera um erro de sintaxe e é interrompido", correto: false },
+            { opcao: "O laço encerra a execução e o programa prossegue para a próxima instrução", correto: true },
+            { opcao: "O laço reinicia do início e limpa as variáveis", correto: false },
+            { opcao: "O computador entra em um ciclo de repetição infinita", correto: false },
+        ],
+    },
+    {
+        question: "Qual é a diferença entre os operadores '=' e '==' em Python?",
+        respostas: [
+            { opcao: "'=' é usado para atribuição de valor e '==' é usado para comparar igualdade entre dois valores", correto: true },
+            { opcao: "'=' compara se dois valores são iguais e '==' atribui valores", correto: false },
+            { opcao: "Ambos realizam a mesma função dentro de expressões condicionais", correto: false },
+            { opcao: "'==' serve apenas para multiplicar dois números inteiros", correto: false },
         ],
     },
     {
@@ -54,159 +90,193 @@ const questoesAlgoritmos = [
             { opcao: "Sim", correto: false },
             { opcao: "Não", correto: true },
         ],
-    },
+    }
 ];
 
 const questoesRedes = [
     {
-        question: "Questão sobre Redes",
+        question: "Uma rede local restrita a um ambiente físico específico, como um laboratório do IFPB, é classificada como:",
         respostas: [
-            { opcao: "falsa", correto: false },
-            { opcao: "verdadeira", correto: true },
-            { opcao: "falsa", correto: false },
+            { opcao: "WAN (Wide Area Network)", correto: false },
+            { opcao: "LAN (Local Area Network)", correto: true },
+            { opcao: "MAN (Metropolitan Area Network)", correto: false },
+            { opcao: "PAN (Personal Area Network)", correto: false },
         ],
     },
     {
-        question: "Qual é a melhor turma de informática do IFPB?",
+        question: "Qual é a principal função de um Roteador em uma rede de computadores?",
         respostas: [
-            { opcao: "1º A", correto: false },
-            { opcao: "1º B", correto: false },
-            { opcao: "2º A", correto: false },
-            { opcao: "2º B", correto: false },
-            { opcao: "3º", correto: true }
+            { opcao: "Interconectar redes diferentes e encaminhar pacotes de dados até o destino adequado", correto: true },
+            { opcao: "Armazenar todos os arquivos da rede em um disco local", correto: false },
+            { opcao: "Fornecer energia elétrica para os computadores conectados", correto: false },
+            { opcao: "Aumentar a resolução da tela dos dispositivos conectados", correto: false },
         ],
     },
     {
-        question: "Qual é a melhor instituição de ensino médio de Campina Grande?",
+        question: "Qual é o papel do protocolo DNS (Domain Name System) na Internet?",
         respostas: [
-            { opcao: "Motiva", correto: false },
-            { opcao: "IFPB", correto: true },
-            { opcao: "ECIT", correto: false },
-            { opcao: "UFCG", correto: false },
+            { opcao: "Criptografar senhas de usuários ao acessar sites bancários", correto: false },
+            { opcao: "Mapear nomes de domínio (ex: www.ifpb.edu.br) para endereços IP numéricos", correto: true },
+            { opcao: "Garantir a velocidade de download de arquivos grandes", correto: false },
+            { opcao: "Conectar o cabo de rede à placa de rede do computador", correto: false },
         ],
     },
     {
-        question: "Quanto é 10 - 3?",
+        question: "Qual é a principal diferença entre um Endereço IP e um Endereço MAC?",
         respostas: [
-            { opcao: "9", correto: false },
-            { opcao: "8", correto: false },
-            { opcao: "7", correto: true },
+            { opcao: "O IP é um identificador lógico configurável, enquanto o MAC é o endereço físico gravado na placa de rede", correto: true },
+            { opcao: "O endereço MAC muda a cada conexão, enquanto o IP é gravado de fábrica no hardware", correto: false },
+            { opcao: "O IP só é utilizado em redes Wi-Fi e o MAC em redes cabeadas", correto: false },
+            { opcao: "Não há diferença, pois ambos referem-se exatamente ao mesmo identificador", correto: false },
         ],
     },
     {
-        question: "Quanto é 5 * 3?",
+        question: "Na arquitetura Cliente-Servidor de redes de computadores:",
         respostas: [
-            { opcao: "15", correto: true },
-            { opcao: "20", correto: false },
-            { opcao: "25", correto: false },
+            { opcao: "O cliente armazena os dados centrais e o servidor realiza as requisições", correto: false },
+            { opcao: "O cliente envia requisições de dados/serviços e o servidor processa e envia as respostas", correto: true },
+            { opcao: "Nenhum computador pode enviar dados sem autorização direta da placa-mãe", correto: false },
+            { opcao: "Todos os computadores desempenham exatamente as mesmas funções sem hierarquia", correto: false },
         ],
     },
     {
-        question: "Em 1665, Isaac Newton",
+        question: "Qual meio físico de transmissão de dados utiliza pulsos de luz para alcançar altíssimas velocidades de transferência?",
         respostas: [
-            { opcao: "Aviadou a luz", correto: false },
-            { opcao: "Mostrou a dispersão da luz com um prisma", correto: true },
-            { opcao: "OuuoOoOooOoeeeeeeeeaaaAAAuUuuu", correto: false },
-            { opcao: "Criou a capa do Pink Floyd", correto: false },
-            { opcao: "Criou o arco-íris", correto: false },
+            { opcao: "Cabo Par Trançado (UTP)", correto: false },
+            { opcao: "Fibra Óptica", correto: true },
+            { opcao: "Cabo Coaxial", correto: false },
+            { opcao: "Ondas de Rádio AM/FM", correto: false },
         ],
     },
     {
-        question: "Quantos cursos técnicos de ENSINO MÉDIO existem no IFPB Campus Campina Grande?",
+        question: "Qual protocolo é amplamente utilizado pelos navegadores para carregar páginas web com segurança?",
         respostas: [
-            { opcao: "3", correto: false },
-            { opcao: "4", correto: false },
-            { opcao: "5", correto: true },
-            { opcao: "6", correto: false },
+            { opcao: "HTTPS", correto: true },
+            { opcao: "FTP", correto: false },
+            { opcao: "SMTP", correto: false },
+            { opcao: "DHCP", correto: false },
         ],
     },
     {
-        question: "Qual é o melhor curso do IFPB?",
+        question: "O que é o Wi-Fi?",
         respostas: [
-            { opcao: "Edificações", correto: false },
-            { opcao: "Informática", correto: true },
-            { opcao: "Mineração", correto: false },
-            { opcao: "Petróleo e Gás", correto: false },
-            { opcao: "Química", correto: false }
-        ]
+            { opcao: "Uma tecnologia de comunicação sem fio que utiliza ondas de rádio para conectar dispositivos", correto: true },
+            { opcao: "Um modelo específico de cabo de fibra óptica", correto: false },
+            { opcao: "Um programa antivírus instalado no computador", correto: false },
+            { opcao: "O botão do gabinete que liga a placa de rede", correto: false },
+        ],
+    },
+    {
+        question: "Qual componente de hardware é responsável por permitir que um computador se conecte a uma rede de dados?",
+        respostas: [
+            { opcao: "Placa de Vídeo (GPU)", correto: false },
+            { opcao: "Placa de Rede (NIC)", correto: true },
+            { opcao: "Fonte de Alimentação", correto: false },
+            { opcao: "Memória ROM", correto: false },
+        ],
+    },
+    {
+        question: "O que a 'Largura de Banda' (Bandwidth) mede em uma conexão de rede?",
+        respostas: [
+            { opcao: "A quantidade de dados transferida em um determinado intervalo de tempo (ex: Mbps)", correto: true },
+            { opcao: "O comprimento físico em metros do cabo de rede", correto: false },
+            { opcao: "A quantidade de monitores conectados na mesma sala", correto: false },
+            { opcao: "O peso do roteador em gramas", correto: false },
+        ],
     }
-
 ];
 
 const questoesSO = [
     {
-        question: "Questão sobre Sistemas Operacionais",
+        question: "Qual é a função essencial de um Sistema Operacional (SO)?",
         respostas: [
-            { opcao: "falsa", correto: false },
-            { opcao: "verdadeira", correto: true },
-            { opcao: "falsa", correto: false },
+            { opcao: "Executar unicamente programas de navegação na web", correto: false },
+            { opcao: "Gerenciar os recursos de hardware e servir de interface entre o computador, programas e usuário", correto: true },
+            { opcao: "Proteger o computador exclusivamente contra ameaças virtuais e vírus", correto: false },
+            { opcao: "Aumentar fisicamente a velocidade do processador da máquina", correto: false },
         ],
     },
     {
-        question: "Qual é a melhor turma de informática do IFPB?",
+        question: "A memória RAM é considerada uma memória 'volátil' porque:",
         respostas: [
-            { opcao: "1º A", correto: false },
-            { opcao: "1º B", correto: false },
-            { opcao: "2º A", correto: false },
-            { opcao: "2º B", correto: false },
-            { opcao: "3º", correto: true }
+            { opcao: "Armazena dados permanentemente mesmo após o desligamento do computador", correto: false },
+            { opcao: "Perde todo o seu conteúdo armazenado quando o computador é desligado ou reiniciado", correto: true },
+            { opcao: "Só pode ser acessada por sistemas operacionais de 64 bits", correto: false },
+            { opcao: "Possui capacidade ilimitada de armazenamento de dados e arquivos", correto: false },
         ],
     },
     {
-        question: "Qual é a melhor instituição de ensino médio de Campina Grande?",
+        question: "No contexto de Sistemas Operacionais, o que representa um 'Processo'?",
         respostas: [
-            { opcao: "Motiva", correto: false },
-            { opcao: "IFPB", correto: true },
-            { opcao: "ECIT", correto: false },
-            { opcao: "UFCG", correto: false },
+            { opcao: "Um programa em execução ao qual foram alocados recursos de memória e processamento", correto: true },
+            { opcao: "Um arquivo de texto armazenado na pasta de documentos", correto: false },
+            { opcao: "O procedimento físico de conectar um novo periférico ao gabinete", correto: false },
+            { opcao: "O cabo de energia conectado à fonte do computador", correto: false },
         ],
     },
     {
-        question: "Quanto é 10 - 3?",
+        question: "Sistemas operacionais de código aberto (Open Source), como a maioria das distribuições Linux, destacam-se por:",
         respostas: [
-            { opcao: "9", correto: false },
-            { opcao: "8", correto: false },
-            { opcao: "7", correto: true },
+            { opcao: "Serem obrigatoriamente pagos e restritos a apenas uma empresa desenvolvedora", correto: false },
+            { opcao: "Permitirem que qualquer pessoa acesse, modifique e distribua seu código-fonte", correto: true },
+            { opcao: "Não permitirem a instalação de novos aplicativos pelo usuário", correto: false },
+            { opcao: "Funcionarem exclusivamente em dispositivos móveis e smartphones", correto: false },
         ],
     },
     {
-        question: "Quanto é 5 * 3?",
+        question: "Qual componente do Sistema Operacional organiza e controla a gravação e leitura de dados no HD ou SSD?",
         respostas: [
-            { opcao: "15", correto: true },
-            { opcao: "20", correto: false },
-            { opcao: "25", correto: false },
+            { opcao: "Sistema de Arquivos (ex: NTFS, EXT4, FAT32)", correto: true },
+            { opcao: "Gerenciador de downloads do navegador", correto: false },
+            { opcao: "Driver de áudio do sistema", correto: false },
+            { opcao: "Compilador da linguagem C", correto: false },
         ],
     },
     {
-        question: "Em 1665, Isaac Newton",
+        question: "Como é chamada a interface de sistema operacional baseada na digitação de comandos em texto?",
         respostas: [
-            { opcao: "Aviadou a luz", correto: false },
-            { opcao: "Mostrou a dispersão da luz com um prisma", correto: true },
-            { opcao: "OuuoOoOooOoeeeeeeeeaaaAAAuUuuu", correto: false },
-            { opcao: "Criou a capa do Pink Floyd", correto: false },
-            { opcao: "Criou o arco-íris", correto: false },
+            { opcao: "GUI (Graphical User Interface)", correto: false },
+            { opcao: "CLI (Command Line Interface / Linha de Comando)", correto: true },
+            { opcao: "API (Application Programming Interface)", correto: false },
+            { opcao: "BIOS (Basic Input Output System)", correto: false },
         ],
     },
     {
-        question: "Quantos cursos técnicos de ENSINO MÉDIO existem no IFPB Campus Campina Grande?",
+        question: "Quais dos itens a seguir são exemplos de Sistemas Operacionais?",
         respostas: [
-            { opcao: "3", correto: false },
-            { opcao: "4", correto: false },
-            { opcao: "5", correto: true },
-            { opcao: "6", correto: false },
+            { opcao: "Google Chrome, WhatsApp e Microsoft Word", correto: false },
+            { opcao: "Windows, Linux e Android", correto: true },
+            { opcao: "Intel Core i7, AMD Ryzen e Apple M1", correto: false },
+            { opcao: "HTML, CSS e JavaScript", correto: false },
         ],
     },
     {
-        question: "Qual é o melhor curso do IFPB?",
+        question: "O que significa dizer que um Sistema Operacional é 'multitarefa'?",
         respostas: [
-            { opcao: "Edificações", correto: false },
-            { opcao: "Informática", correto: true },
-            { opcao: "Mineração", correto: false },
-            { opcao: "Petróleo e Gás", correto: false },
-            { opcao: "Química", correto: false }
-        ]
+            { opcao: "Que ele é capaz de gerenciar e alternar a execução de vários programas simultaneamente", correto: true },
+            { opcao: "Que ele só consegue rodar um único programa de cada vez", correto: false },
+            { opcao: "Que ele só funciona quando há mais de um monitor conectado", correto: false },
+            { opcao: "Que ele faz a limpeza física das peças do computador", correto: false },
+        ],
+    },
+    {
+        question: "O que é o 'Kernel' (núcleo) de um Sistema Operacional?",
+        respostas: [
+            { opcao: "O componente principal do SO que gerencia o acesso aos recursos do hardware", correto: true },
+            { opcao: "O aplicativo de calculadora nativo do sistema", correto: false },
+            { opcao: "O cabo de energia que liga o computador na tomada", correto: false },
+            { opcao: "A caixa de som interna do gabinete", correto: false },
+        ],
+    },
+    {
+        question: "Como é chamado o processo de carregamento e inicialização do Sistema Operacional quando o computador é ligado?",
+        respostas: [
+            { opcao: "Formatting", correto: false },
+            { opcao: "Boot (ou Bootstrapping)", correto: true },
+            { opcao: "Download", correto: false },
+            { opcao: "Backup", correto: false },
+        ],
     }
-
 ];
 
 function adicionarCaixaDeTexto(x) {
@@ -323,7 +393,7 @@ function verificarResposta(foiCorreto, botaoClicado, disciplina) {
     if (foiCorreto) {
         acertos++;
 
-        const tempoMaximo = 10000;
+        const tempoMaximo = 15000;
         const tempoRestante = tempoMaximo - tempoDeResposta;
         const bonus = Math.round(tempoRestante / 100);
         pontuacao += 100 + bonus;
@@ -343,8 +413,6 @@ function verificarResposta(foiCorreto, botaoClicado, disciplina) {
 }
 
 function finalizarJogo() {
-    enviarResultado();
-
     const corpo = document.querySelector('#corpo');
 
     corpo.innerHTML = `
@@ -355,7 +423,6 @@ function finalizarJogo() {
             <button class="botao-final" onclick="location.reload()">Jogar Novamente</button>
         </div>
     `;
-
 }
 
 function barraProgresso(disciplina) {
@@ -364,7 +431,7 @@ function barraProgresso(disciplina) {
 
     const barra = document.querySelector(".barra div");
     let progresso = 0;
-    const tempoTotal = 10000;
+    const tempoTotal = 15000;
     const passo = 100;
 
     barra.style.width = "0%";
@@ -399,35 +466,9 @@ function barraProgresso(disciplina) {
                     ? "0.35"
                     : "1";
         }
-
-
         else {
             barra.classList.remove("perigo");
             barra.style.opacity = "1";
         }
     }, passo);
-}
-
-function enviarResultado() {
-    const url = "https://script.google.com/macros/s/AKfycbyAkuvxExKhIlKrhEXecMj7HKe1mQ2v26-cdceC1h_oCJm75mO7S1dfcHNXHDwVThERjg/exec";
-
-    // Criamos um formulário simples (evita erro de JSON no Apps Script)
-    const formData = new URLSearchParams();
-    formData.append("nome", nome);
-    formData.append("materia", materia);
-    formData.append("acertos", acertos);
-    formData.append("totalQuestoes", questaoAtualIndice);
-    formData.append("navegador", navigator.userAgent);
-
-    fetch(url, {
-        method: "POST",
-        mode: "no-cors",
-        body: formData
-    })
-    .then(() => {
-        console.log("Resultado enviado com sucesso!");
-    })
-    .catch(err => {
-        console.error("Erro ao enviar resultado:", err);
-    });
 }
